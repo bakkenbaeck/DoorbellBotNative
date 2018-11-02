@@ -8,4 +8,13 @@ build
 captures
 .externalNativeBuild
 
+# Xcode Things
+iOS/Doorbell-bot Native/Doorbell-bot Native.xcodeproj/project.xcworkspace/xcuserdata
+iOS/Doorbell-bot Native/Doorbell-bot Native.xcodeproj/xcuserdata
 
+# Build Artifacts for shared code
+SharedCode/build/kotlin
+SharedCode/build/classes
+SharedCode/build/bin
+SharedCode/build/tmp
+gradlew
