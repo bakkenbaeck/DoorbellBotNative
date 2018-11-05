@@ -9,19 +9,19 @@ captures
 .externalNativeBuild
 
 # Xcode Things
-iOS/Doorbell-bot Native/Doorbell-bot Native.xcodeproj/project.xcworkspace/xcuserdata
-iOS/Doorbell-bot Native/Doorbell-bot Native.xcodeproj/xcuserdata
+iOS/DoorbellBotNative.xcodeproj/project.xcworkspace/xcuserdata
+iOS/DoorbellBotNative.xcodeproj/xcuserdata
+iOS/Pods/Pods.xcodeproj/xcuserdata
+iOS/DoorbellBotNative.xcworkspace/xcuserdata
 
 # Build Artifacts for shared code
 SharedCode/build/kotlin
 SharedCode/build/classes
 SharedCode/build/bin
 SharedCode/build/tmp
-gradlew
-iOS/DoorbellBotNative.xcodeproj/project.xcworkspace/xcuserdata
-iOS/DoorbellBotNative.xcodeproj/xcuserdata
-iOS/Pods/Pods.xcodeproj/xcuserdata
-iOS/DoorbellBotNative.xcworkspace/xcuserdata
+
+# Individual user data
+
 fastlane/DerivedData
 fastlane/test_output
-report.xml
+fastlane/report.xml
