@@ -10,7 +10,7 @@ import XCTest
 import EarlGrey
 
 class DoorbellBotNativeUITests: XCTestCase {
-    
+
     private lazy var testRobot: TestRobot = EarlGreyRobot()
 
     func testEarlGreyIsWorking() {

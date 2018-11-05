@@ -19,4 +19,3 @@ class ViewController: UIViewController {
         self.testLabel.text = CommonKt.createApplicationScreenMessage()
     }
 }
-
