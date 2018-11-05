@@ -18,3 +18,5 @@ SharedCode/build/classes
 SharedCode/build/bin
 SharedCode/build/tmp
 gradlew
+iOS/DoorbellBotNative.xcodeproj/project.xcworkspace/xcuserdata
+iOS/DoorbellBotNative.xcodeproj/xcuserdata

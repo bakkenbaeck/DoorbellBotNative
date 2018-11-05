@@ -14,8 +14,8 @@
 		2EDC3828218C5B86007AD581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDC3826218C5B86007AD581 /* LaunchScreen.storyboard */; };
 		2EDC3833218C5B86007AD581 /* Doorbell_bot_NativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC3832218C5B86007AD581 /* Doorbell_bot_NativeTests.swift */; };
 		2EDC383E218C5B87007AD581 /* Doorbell_bot_NativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC383D218C5B87007AD581 /* Doorbell_bot_NativeUITests.swift */; };
-		2EDC384C218C5ED3007AD581 /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDC384B218C5ED3007AD581 /* SharedCode.framework */; };
-		2EDC384D218C5ED3007AD581 /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDC384B218C5ED3007AD581 /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9BC2DFE721903D44009C6F40 /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC2DFE321903CE9009C6F40 /* SharedCode.framework */; };
+		9BC2DFE821903D44009C6F40 /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC2DFE321903CE9009C6F40 /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2EDC384E218C5ED3007AD581 /* Embed Frameworks */ = {
+		9BC2DFE621903CE9009C6F40 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2EDC384D218C5ED3007AD581 /* SharedCode.framework in Embed Frameworks */,
+				9BC2DFE821903D44009C6F40 /* SharedCode.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,20 +50,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2EDC381A218C5B85007AD581 /* Doorbell-bot Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doorbell-bot Native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EDC381A218C5B85007AD581 /* DoorbellBotNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorbellBotNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDC381D218C5B85007AD581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EDC381F218C5B85007AD581 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2EDC3822218C5B85007AD581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EDC3824218C5B86007AD581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EDC3827218C5B86007AD581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EDC3829218C5B86007AD581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EDC382E218C5B86007AD581 /* Doorbell-bot NativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Doorbell-bot NativeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EDC382E218C5B86007AD581 /* DoorbellBotNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoorbellBotNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDC3832218C5B86007AD581 /* Doorbell_bot_NativeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doorbell_bot_NativeTests.swift; sourceTree = "<group>"; };
 		2EDC3834218C5B86007AD581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EDC3839218C5B87007AD581 /* Doorbell-bot NativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Doorbell-bot NativeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EDC3839218C5B87007AD581 /* DoorbellBotNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoorbellBotNativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDC383D218C5B87007AD581 /* Doorbell_bot_NativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doorbell_bot_NativeUITests.swift; sourceTree = "<group>"; };
 		2EDC383F218C5B87007AD581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EDC384B218C5ED3007AD581 /* SharedCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedCode.framework; path = "../../SharedCode/build/xcode-frameworks/SharedCode.framework"; sourceTree = "<group>"; };
+		9BC2DFE321903CE9009C6F40 /* SharedCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedCode.framework; path = "../SharedCode/build/xcode-frameworks/SharedCode.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EDC384C218C5ED3007AD581 /* SharedCode.framework in Frameworks */,
+				9BC2DFE721903D44009C6F40 /* SharedCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,10 +95,10 @@
 		2EDC3811218C5B85007AD581 = {
 			isa = PBXGroup;
 			children = (
-				2EDC384B218C5ED3007AD581 /* SharedCode.framework */,
-				2EDC381C218C5B85007AD581 /* Doorbell-bot Native */,
-				2EDC3831218C5B86007AD581 /* Doorbell-bot NativeTests */,
-				2EDC383C218C5B87007AD581 /* Doorbell-bot NativeUITests */,
+				9BC2DFE321903CE9009C6F40 /* SharedCode.framework */,
+				2EDC381C218C5B85007AD581 /* DoorbellBotNative */,
+				2EDC3831218C5B86007AD581 /* DoorbellBotNativeTests */,
+				2EDC383C218C5B87007AD581 /* DoorbellDoorbellBotNativeUITests */,
 				2EDC381B218C5B85007AD581 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,14 +106,14 @@
 		2EDC381B218C5B85007AD581 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2EDC381A218C5B85007AD581 /* Doorbell-bot Native.app */,
-				2EDC382E218C5B86007AD581 /* Doorbell-bot NativeTests.xctest */,
-				2EDC3839218C5B87007AD581 /* Doorbell-bot NativeUITests.xctest */,
+				2EDC381A218C5B85007AD581 /* DoorbellBotNative.app */,
+				2EDC382E218C5B86007AD581 /* DoorbellBotNativeTests.xctest */,
+				2EDC3839218C5B87007AD581 /* DoorbellBotNativeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2EDC381C218C5B85007AD581 /* Doorbell-bot Native */ = {
+		2EDC381C218C5B85007AD581 /* DoorbellBotNative */ = {
 			isa = PBXGroup;
 			children = (
 				2EDC381D218C5B85007AD581 /* AppDelegate.swift */,
@@ -123,52 +123,52 @@
 				2EDC3826218C5B86007AD581 /* LaunchScreen.storyboard */,
 				2EDC3829218C5B86007AD581 /* Info.plist */,
 			);
-			path = "Doorbell-bot Native";
+			path = DoorbellBotNative;
 			sourceTree = "<group>";
 		};
-		2EDC3831218C5B86007AD581 /* Doorbell-bot NativeTests */ = {
+		2EDC3831218C5B86007AD581 /* DoorbellBotNativeTests */ = {
 			isa = PBXGroup;
 			children = (
 				2EDC3832218C5B86007AD581 /* Doorbell_bot_NativeTests.swift */,
 				2EDC3834218C5B86007AD581 /* Info.plist */,
 			);
-			path = "Doorbell-bot NativeTests";
+			path = DoorbellBotNativeTests;
 			sourceTree = "<group>";
 		};
-		2EDC383C218C5B87007AD581 /* Doorbell-bot NativeUITests */ = {
+		2EDC383C218C5B87007AD581 /* DoorbellDoorbellBotNativeUITests */ = {
 			isa = PBXGroup;
 			children = (
 				2EDC383D218C5B87007AD581 /* Doorbell_bot_NativeUITests.swift */,
 				2EDC383F218C5B87007AD581 /* Info.plist */,
 			);
-			path = "Doorbell-bot NativeUITests";
+			path = DoorbellDoorbellBotNativeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2EDC3819218C5B85007AD581 /* Doorbell-bot Native */ = {
+		2EDC3819218C5B85007AD581 /* DoorbellBotNative */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EDC3842218C5B87007AD581 /* Build configuration list for PBXNativeTarget "Doorbell-bot Native" */;
+			buildConfigurationList = 2EDC3842218C5B87007AD581 /* Build configuration list for PBXNativeTarget "DoorbellBotNative" */;
 			buildPhases = (
+				2EDC384F218C5F20007AD581 /* Build Kotlin Native Framework */,
 				2EDC3816218C5B85007AD581 /* Sources */,
 				2EDC3817218C5B85007AD581 /* Frameworks */,
 				2EDC3818218C5B85007AD581 /* Resources */,
-				2EDC384E218C5ED3007AD581 /* Embed Frameworks */,
-				2EDC384F218C5F20007AD581 /* ShellScript */,
+				9BC2DFE621903CE9009C6F40 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Doorbell-bot Native";
+			name = DoorbellBotNative;
 			productName = "Doorbell-bot Native";
-			productReference = 2EDC381A218C5B85007AD581 /* Doorbell-bot Native.app */;
+			productReference = 2EDC381A218C5B85007AD581 /* DoorbellBotNative.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2EDC382D218C5B86007AD581 /* Doorbell-bot NativeTests */ = {
+		2EDC382D218C5B86007AD581 /* DoorbellBotNativeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EDC3845218C5B87007AD581 /* Build configuration list for PBXNativeTarget "Doorbell-bot NativeTests" */;
+			buildConfigurationList = 2EDC3845218C5B87007AD581 /* Build configuration list for PBXNativeTarget "DoorbellBotNativeTests" */;
 			buildPhases = (
 				2EDC382A218C5B86007AD581 /* Sources */,
 				2EDC382B218C5B86007AD581 /* Frameworks */,
@@ -179,14 +179,14 @@
 			dependencies = (
 				2EDC3830218C5B86007AD581 /* PBXTargetDependency */,
 			);
-			name = "Doorbell-bot NativeTests";
+			name = DoorbellBotNativeTests;
 			productName = "Doorbell-bot NativeTests";
-			productReference = 2EDC382E218C5B86007AD581 /* Doorbell-bot NativeTests.xctest */;
+			productReference = 2EDC382E218C5B86007AD581 /* DoorbellBotNativeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2EDC3838218C5B87007AD581 /* Doorbell-bot NativeUITests */ = {
+		2EDC3838218C5B87007AD581 /* DoorbellBotNativeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EDC3848218C5B87007AD581 /* Build configuration list for PBXNativeTarget "Doorbell-bot NativeUITests" */;
+			buildConfigurationList = 2EDC3848218C5B87007AD581 /* Build configuration list for PBXNativeTarget "DoorbellBotNativeUITests" */;
 			buildPhases = (
 				2EDC3835218C5B87007AD581 /* Sources */,
 				2EDC3836218C5B87007AD581 /* Frameworks */,
@@ -197,9 +197,9 @@
 			dependencies = (
 				2EDC383B218C5B87007AD581 /* PBXTargetDependency */,
 			);
-			name = "Doorbell-bot NativeUITests";
+			name = DoorbellBotNativeUITests;
 			productName = "Doorbell-bot NativeUITests";
-			productReference = 2EDC3839218C5B87007AD581 /* Doorbell-bot NativeUITests.xctest */;
+			productReference = 2EDC3839218C5B87007AD581 /* DoorbellBotNativeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -225,7 +225,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2EDC3815218C5B85007AD581 /* Build configuration list for PBXProject "Doorbell-bot Native" */;
+			buildConfigurationList = 2EDC3815218C5B85007AD581 /* Build configuration list for PBXProject "DoorbellBotNative" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -238,9 +238,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2EDC3819218C5B85007AD581 /* Doorbell-bot Native */,
-				2EDC382D218C5B86007AD581 /* Doorbell-bot NativeTests */,
-				2EDC3838218C5B87007AD581 /* Doorbell-bot NativeUITests */,
+				2EDC3819218C5B85007AD581 /* DoorbellBotNative */,
+				2EDC382D218C5B86007AD581 /* DoorbellBotNativeTests */,
+				2EDC3838218C5B87007AD581 /* DoorbellBotNativeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,7 +273,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2EDC384F218C5F20007AD581 /* ShellScript */ = {
+		2EDC384F218C5F20007AD581 /* Build Kotlin Native Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,13 +282,14 @@
 			);
 			inputPaths = (
 			);
+			name = "Build Kotlin Native Framework";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd \"$SRCROOT/../../SharedCode/build/xcode-frameworks\"\n./gradlew :SharedCode:packForXCode -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
+			shellScript = "cd \"$SRCROOT/../SharedCode/build/xcode-frameworks\"\n./gradlew :SharedCode:packForXCode\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -323,12 +324,12 @@
 /* Begin PBXTargetDependency section */
 		2EDC3830218C5B86007AD581 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2EDC3819218C5B85007AD581 /* Doorbell-bot Native */;
+			target = 2EDC3819218C5B85007AD581 /* DoorbellBotNative */;
 			targetProxy = 2EDC382F218C5B86007AD581 /* PBXContainerItemProxy */;
 		};
 		2EDC383B218C5B87007AD581 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2EDC3819218C5B85007AD581 /* Doorbell-bot Native */;
+			target = 2EDC3819218C5B85007AD581 /* DoorbellBotNative */;
 			targetProxy = 2EDC383A218C5B87007AD581 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -476,8 +477,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V248Y6WK6M;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../SharedCode/build/xcode-frameworks";
-				INFOPLIST_FILE = "Doorbell-bot Native/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../SharedCode/build/xcode-frameworks";
+				INFOPLIST_FILE = DoorbellBotNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,8 +497,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V248Y6WK6M;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../SharedCode/build/xcode-frameworks";
-				INFOPLIST_FILE = "Doorbell-bot Native/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../SharedCode/build/xcode-frameworks";
+				INFOPLIST_FILE = DoorbellBotNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,7 +517,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V248Y6WK6M;
-				INFOPLIST_FILE = "Doorbell-bot NativeTests/Info.plist";
+				INFOPLIST_FILE = DoorbellBotNativeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,7 +527,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Doorbell-bot Native.app/Doorbell-bot Native";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoorbellBotNative.app/DoorbellBotNative";
 			};
 			name = Debug;
 		};
@@ -537,7 +538,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V248Y6WK6M;
-				INFOPLIST_FILE = "Doorbell-bot NativeTests/Info.plist";
+				INFOPLIST_FILE = DoorbellBotNativeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -547,7 +548,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Doorbell-bot Native.app/Doorbell-bot Native";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoorbellBotNative.app/DoorbellBotNative";
 			};
 			name = Release;
 		};
@@ -557,7 +558,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V248Y6WK6M;
-				INFOPLIST_FILE = "Doorbell-bot NativeUITests/Info.plist";
+				INFOPLIST_FILE = DoorbellBotNativeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,7 +578,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V248Y6WK6M;
-				INFOPLIST_FILE = "Doorbell-bot NativeUITests/Info.plist";
+				INFOPLIST_FILE = DoorbellBotNativeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -594,7 +595,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2EDC3815218C5B85007AD581 /* Build configuration list for PBXProject "Doorbell-bot Native" */ = {
+		2EDC3815218C5B85007AD581 /* Build configuration list for PBXProject "DoorbellBotNative" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2EDC3840218C5B87007AD581 /* Debug */,
@@ -603,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EDC3842218C5B87007AD581 /* Build configuration list for PBXNativeTarget "Doorbell-bot Native" */ = {
+		2EDC3842218C5B87007AD581 /* Build configuration list for PBXNativeTarget "DoorbellBotNative" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2EDC3843218C5B87007AD581 /* Debug */,
@@ -612,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EDC3845218C5B87007AD581 /* Build configuration list for PBXNativeTarget "Doorbell-bot NativeTests" */ = {
+		2EDC3845218C5B87007AD581 /* Build configuration list for PBXNativeTarget "DoorbellBotNativeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2EDC3846218C5B87007AD581 /* Debug */,
@@ -621,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EDC3848218C5B87007AD581 /* Build configuration list for PBXNativeTarget "Doorbell-bot NativeUITests" */ = {
+		2EDC3848218C5B87007AD581 /* Build configuration list for PBXNativeTarget "DoorbellBotNativeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2EDC3849218C5B87007AD581 /* Debug */,
