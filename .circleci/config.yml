@@ -9,6 +9,9 @@ jobs:
           name: KTLint
           command: ./gradlew ktlintCheck
       - run:
+          name: Assemble
+          command: ./gradlew assemble
+      - run:
           name: Assemble & Test Shared Framework
           command: ./gradlew testRelease
   ios:
@@ -36,8 +39,14 @@ jobs:
           name: KTLint
           command: ./gradlew ktlintCheck
       - run:
-          name: Assemble & Test
-          command: ./gradlew testRelease
+          name: Assemble
+          command: ./gradlew assemble
+      - run:
+          name: Headless Unit Tests
+          command: ./gradlew :android:test
+      - run:
+          name: Instrumented Tests
+          command: ./gradlew :android:connectedAndroidTest
 
 workflows:
   version: 2
