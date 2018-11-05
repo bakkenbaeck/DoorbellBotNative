@@ -9,7 +9,8 @@ jobs:
           name: KTLint
           command: ./gradlew ktlint
       - run:
-          name: ./gradlew testRelease
+          name: Assemble & Test Shared Framework
+          command: ./gradlew testRelease
   ios:
     macos:
       xcode: "10.1.0"
@@ -17,7 +18,7 @@ jobs:
       - checkout
       - run:
           name: Run All Tests
-          command: bundle exec fastlane test_all
+          command: bundle exec fastlane ios ci_test
   android:
     docker:
       - image: circleci/android:api-27-alpha
