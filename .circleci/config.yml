@@ -16,6 +16,14 @@ jobs:
       xcode: "10.0.0"
     steps:
       - checkout
+      - restore_cache:
+          key: "v2-gems"
+      - run:
+          name: Install with bundler
+          command: bundle check || bundle install --path .bundle
+      - save_cache:
+          key: "v2-gems"
+          paths: ["./.bundle"]
       - run:
           name: Run All Tests
           command: bundle exec fastlane ios ci_test
