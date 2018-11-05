@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: KTLint
-          command: ./gradlew ktlint
+          command: ./gradlew ktlintCheck
       - run:
           name: Assemble & Test Shared Framework
           command: ./gradlew testRelease
@@ -34,7 +34,7 @@ jobs:
       - checkout
       - run:
           name: KTLint
-          command: ./gradlew ktlint
+          command: ./gradlew ktlintCheck
       - run:
           name: Assemble & Test
           command: ./gradlew testRelease
