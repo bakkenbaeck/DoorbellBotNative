@@ -1,0 +1,20 @@
+PODS:
+  - EarlGrey (1.15.0)
+  - SwiftLint (0.27.0)
+
+DEPENDENCIES:
+  - EarlGrey (~> 1.15.0)
+  - SwiftLint (~> 0.27.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EarlGrey
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  EarlGrey: 289a16cc7d08a54b962d72881b21e36d5103b549
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+
+PODFILE CHECKSUM: 1ebb8f32f88b3edd3b12789d80db4120771a4275
+
+COCOAPODS: 1.5.3

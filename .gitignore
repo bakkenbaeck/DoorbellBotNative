@@ -20,3 +20,4 @@ SharedCode/build/tmp
 gradlew
 iOS/DoorbellBotNative.xcodeproj/project.xcworkspace/xcuserdata
 iOS/DoorbellBotNative.xcodeproj/xcuserdata
+iOS/Pods/Pods.xcodeproj/xcuserdata

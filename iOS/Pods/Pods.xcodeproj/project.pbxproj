@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6400F68CF3D3309DE729A98BA78732B4 /* Pods-DoorbellBotNativeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C60FB74D9F5BB6B3A8F313BC9FEBC4B9 /* Pods-DoorbellBotNativeTests-dummy.m */; };
+		F0C2258F54500464208823E2010ECDDA /* Pods-DoorbellBotNativeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF66D7C7C7F2C1807790A1C06E13C6 /* Pods-DoorbellBotNativeUITests-dummy.m */; };
+		F9965F05827E123D5EFCC29C1C30226B /* Pods-DoorbellBotNative-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E739F0E3B00F86902D4CC0968BD44DB /* Pods-DoorbellBotNative-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAB8B67761C63F1FCB7A4636DAD9AF76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27F864CB230B8A570E86CE8F294876D4;
+			remoteInfo = "Pods-DoorbellBotNative";
+		};
+		FF4A934B30387B5FCFA17B1E827F45EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27F864CB230B8A570E86CE8F294876D4;
+			remoteInfo = "Pods-DoorbellBotNative";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B3D698CDD67C3F5993A69A3B6DD08DF /* Pods-DoorbellBotNative-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoorbellBotNative-frameworks.sh"; sourceTree = "<group>"; };
+		11DF66D7C7C7F2C1807790A1C06E13C6 /* Pods-DoorbellBotNativeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DoorbellBotNativeUITests-dummy.m"; sourceTree = "<group>"; };
+		128B94662847B738C653C3A04945D4D6 /* Pods-DoorbellBotNativeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoorbellBotNativeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BC2B223C4FE313A483FFAF97679115F /* libPods-DoorbellBotNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-DoorbellBotNativeTests.a"; path = "libPods-DoorbellBotNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CAE867E9AC8D9CF3DB3A5608334FD30 /* Pods-DoorbellBotNative-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DoorbellBotNative-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2D24354E51F318C96A18EA3336BFC8BD /* Pods-DoorbellBotNativeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DoorbellBotNativeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2D725C0CDD10DB6D121E208FF0990352 /* Pods-DoorbellBotNativeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoorbellBotNativeUITests-resources.sh"; sourceTree = "<group>"; };
+		3E739F0E3B00F86902D4CC0968BD44DB /* Pods-DoorbellBotNative-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DoorbellBotNative-dummy.m"; sourceTree = "<group>"; };
+		3EA7E7CD0179CA86B8E02630DDC1279D /* Pods-DoorbellBotNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoorbellBotNativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B04731DA2BE48E9CCABE169BBEFF9CE /* Pods-DoorbellBotNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoorbellBotNative.debug.xcconfig"; sourceTree = "<group>"; };
+		7956482D8E525B2098AFB85338E02CC2 /* Pods-DoorbellBotNative-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DoorbellBotNative-acknowledgements.plist"; sourceTree = "<group>"; };
+		7A8370836BF0E5ECFE1C97B7697F254F /* Pods-DoorbellBotNativeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DoorbellBotNativeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D6BCAFA230DCD15273822BDFDF9E35E /* libPods-DoorbellBotNativeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-DoorbellBotNativeUITests.a"; path = "libPods-DoorbellBotNativeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		855E761F8C48FB9B5C8055D10E2E83E9 /* Pods-DoorbellBotNativeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoorbellBotNativeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB9EDD4AC1C473D8106019DEB811DDA3 /* Pods-DoorbellBotNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoorbellBotNative.release.xcconfig"; sourceTree = "<group>"; };
+		C41D3C2D90C8282FBE5D9646B14ADC53 /* EarlGrey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EarlGrey.framework; path = EarlGrey/EarlGrey.framework; sourceTree = "<group>"; };
+		C51C2297927A8F9C2B50729AD27FD08A /* Pods-DoorbellBotNativeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoorbellBotNativeTests-resources.sh"; sourceTree = "<group>"; };
+		C51CB99F0DCA30C38BA1B3A33803BFBC /* Pods-DoorbellBotNativeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoorbellBotNativeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C60FB74D9F5BB6B3A8F313BC9FEBC4B9 /* Pods-DoorbellBotNativeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DoorbellBotNativeTests-dummy.m"; sourceTree = "<group>"; };
+		CC7FA672DAEFA5A538DA15BAD60AF58D /* Pods-DoorbellBotNativeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DoorbellBotNativeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D295305C8002FCC21BAE7F5A25990B80 /* Pods-DoorbellBotNativeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoorbellBotNativeTests-frameworks.sh"; sourceTree = "<group>"; };
+		D808EFF3A442B1038F0A80C07AFF20AF /* Pods-DoorbellBotNative-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoorbellBotNative-resources.sh"; sourceTree = "<group>"; };
+		DAE66EC2FCCF7C87B267A4A646779E49 /* libPods-DoorbellBotNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-DoorbellBotNative.a"; path = "libPods-DoorbellBotNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBBE3FD834B656C0D8B8C4A8FB6E5962 /* Pods-DoorbellBotNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoorbellBotNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE97FCFDD286939BE86BCC2996AF1C80 /* Pods-DoorbellBotNativeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DoorbellBotNativeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02C9EB3401FDFBC4CDF70A0E4E5385D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B3DAD2183192E3D1F20573B35FFB4DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE79C0C901F6DBDCE385BB46619E8CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B4203DD99D3F0F8D365844DD3931ED9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E6876F7D34BEAD9FFA730B0B06164E2 /* Pods-DoorbellBotNative */,
+				592BF15C517F2627F790D6064F7F74F0 /* Pods-DoorbellBotNativeTests */,
+				68BA552E32C31753DB3328F01C6F98F4 /* Pods-DoorbellBotNativeUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		33B618EA2478F30627BB8B92E27FC7D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAE66EC2FCCF7C87B267A4A646779E49 /* libPods-DoorbellBotNative.a */,
+				2BC2B223C4FE313A483FFAF97679115F /* libPods-DoorbellBotNativeTests.a */,
+				7D6BCAFA230DCD15273822BDFDF9E35E /* libPods-DoorbellBotNativeUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36FC977DCFB91B7EB97449D013E44C75 /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		3E6876F7D34BEAD9FFA730B0B06164E2 /* Pods-DoorbellBotNative */ = {
+			isa = PBXGroup;
+			children = (
+				2CAE867E9AC8D9CF3DB3A5608334FD30 /* Pods-DoorbellBotNative-acknowledgements.markdown */,
+				7956482D8E525B2098AFB85338E02CC2 /* Pods-DoorbellBotNative-acknowledgements.plist */,
+				3E739F0E3B00F86902D4CC0968BD44DB /* Pods-DoorbellBotNative-dummy.m */,
+				0B3D698CDD67C3F5993A69A3B6DD08DF /* Pods-DoorbellBotNative-frameworks.sh */,
+				D808EFF3A442B1038F0A80C07AFF20AF /* Pods-DoorbellBotNative-resources.sh */,
+				6B04731DA2BE48E9CCABE169BBEFF9CE /* Pods-DoorbellBotNative.debug.xcconfig */,
+				BB9EDD4AC1C473D8106019DEB811DDA3 /* Pods-DoorbellBotNative.release.xcconfig */,
+			);
+			name = "Pods-DoorbellBotNative";
+			path = "Target Support Files/Pods-DoorbellBotNative";
+			sourceTree = "<group>";
+		};
+		592BF15C517F2627F790D6064F7F74F0 /* Pods-DoorbellBotNativeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE97FCFDD286939BE86BCC2996AF1C80 /* Pods-DoorbellBotNativeTests-acknowledgements.markdown */,
+				7A8370836BF0E5ECFE1C97B7697F254F /* Pods-DoorbellBotNativeTests-acknowledgements.plist */,
+				C60FB74D9F5BB6B3A8F313BC9FEBC4B9 /* Pods-DoorbellBotNativeTests-dummy.m */,
+				D295305C8002FCC21BAE7F5A25990B80 /* Pods-DoorbellBotNativeTests-frameworks.sh */,
+				C51C2297927A8F9C2B50729AD27FD08A /* Pods-DoorbellBotNativeTests-resources.sh */,
+				DBBE3FD834B656C0D8B8C4A8FB6E5962 /* Pods-DoorbellBotNativeTests.debug.xcconfig */,
+				3EA7E7CD0179CA86B8E02630DDC1279D /* Pods-DoorbellBotNativeTests.release.xcconfig */,
+			);
+			name = "Pods-DoorbellBotNativeTests";
+			path = "Target Support Files/Pods-DoorbellBotNativeTests";
+			sourceTree = "<group>";
+		};
+		5B7CE753FB6F594A500EEBC85DF65A97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C40C22D4F7E6339CB16B9DF38EC019BA /* EarlGrey */,
+				36FC977DCFB91B7EB97449D013E44C75 /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		62B7E779B3C8D08F034422FCA674D56A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C41D3C2D90C8282FBE5D9646B14ADC53 /* EarlGrey.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68BA552E32C31753DB3328F01C6F98F4 /* Pods-DoorbellBotNativeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D24354E51F318C96A18EA3336BFC8BD /* Pods-DoorbellBotNativeUITests-acknowledgements.markdown */,
+				CC7FA672DAEFA5A538DA15BAD60AF58D /* Pods-DoorbellBotNativeUITests-acknowledgements.plist */,
+				11DF66D7C7C7F2C1807790A1C06E13C6 /* Pods-DoorbellBotNativeUITests-dummy.m */,
+				855E761F8C48FB9B5C8055D10E2E83E9 /* Pods-DoorbellBotNativeUITests-frameworks.sh */,
+				2D725C0CDD10DB6D121E208FF0990352 /* Pods-DoorbellBotNativeUITests-resources.sh */,
+				128B94662847B738C653C3A04945D4D6 /* Pods-DoorbellBotNativeUITests.debug.xcconfig */,
+				C51CB99F0DCA30C38BA1B3A33803BFBC /* Pods-DoorbellBotNativeUITests.release.xcconfig */,
+			);
+			name = "Pods-DoorbellBotNativeUITests";
+			path = "Target Support Files/Pods-DoorbellBotNativeUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				5B7CE753FB6F594A500EEBC85DF65A97 /* Pods */,
+				33B618EA2478F30627BB8B92E27FC7D2 /* Products */,
+				2B4203DD99D3F0F8D365844DD3931ED9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		C40C22D4F7E6339CB16B9DF38EC019BA /* EarlGrey */ = {
+			isa = PBXGroup;
+			children = (
+				62B7E779B3C8D08F034422FCA674D56A /* Frameworks */,
+			);
+			name = EarlGrey;
+			path = EarlGrey;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0FC441BEEEB581951ED1B6CEF79EC6CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F2B42F227273091521593A5D408FD5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96AF04F1101B3F87D7C99DD649E8E97E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		27F864CB230B8A570E86CE8F294876D4 /* Pods-DoorbellBotNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88D9590AD88055FB8518E08A3F2E04E4 /* Build configuration list for PBXNativeTarget "Pods-DoorbellBotNative" */;
+			buildPhases = (
+				96AF04F1101B3F87D7C99DD649E8E97E /* Headers */,
+				5ACCAB14D71FF391148424F94B71BF0A /* Sources */,
+				EFE79C0C901F6DBDCE385BB46619E8CE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DoorbellBotNative";
+			productName = "Pods-DoorbellBotNative";
+			productReference = DAE66EC2FCCF7C87B267A4A646779E49 /* libPods-DoorbellBotNative.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7EE1D593A13FA0EEF7C03E1DF4773D09 /* Pods-DoorbellBotNativeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2C67085CE5C540388EFCB962BCBA0A /* Build configuration list for PBXNativeTarget "Pods-DoorbellBotNativeUITests" */;
+			buildPhases = (
+				5F2B42F227273091521593A5D408FD5E /* Headers */,
+				E71D4CBC88BCE27AFBA5960D71E1BDFE /* Sources */,
+				7B3DAD2183192E3D1F20573B35FFB4DC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				837FB15BE91EFE337C66DD5B525E4803 /* PBXTargetDependency */,
+			);
+			name = "Pods-DoorbellBotNativeUITests";
+			productName = "Pods-DoorbellBotNativeUITests";
+			productReference = 7D6BCAFA230DCD15273822BDFDF9E35E /* libPods-DoorbellBotNativeUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F8BBE423F1385E520C8C51A8B5CBC33C /* Pods-DoorbellBotNativeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51768CEF0DEE713C8FEA6DFA0CA9D4F1 /* Build configuration list for PBXNativeTarget "Pods-DoorbellBotNativeTests" */;
+			buildPhases = (
+				0FC441BEEEB581951ED1B6CEF79EC6CA /* Headers */,
+				1F85A3A8A2B887AF6D1B5970998A4944 /* Sources */,
+				02C9EB3401FDFBC4CDF70A0E4E5385D2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				486526E2F3A85AA88B0DA2D20F0CD9B5 /* PBXTargetDependency */,
+			);
+			name = "Pods-DoorbellBotNativeTests";
+			productName = "Pods-DoorbellBotNativeTests";
+			productReference = 2BC2B223C4FE313A483FFAF97679115F /* libPods-DoorbellBotNativeTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 33B618EA2478F30627BB8B92E27FC7D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27F864CB230B8A570E86CE8F294876D4 /* Pods-DoorbellBotNative */,
+				F8BBE423F1385E520C8C51A8B5CBC33C /* Pods-DoorbellBotNativeTests */,
+				7EE1D593A13FA0EEF7C03E1DF4773D09 /* Pods-DoorbellBotNativeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F85A3A8A2B887AF6D1B5970998A4944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6400F68CF3D3309DE729A98BA78732B4 /* Pods-DoorbellBotNativeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ACCAB14D71FF391148424F94B71BF0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9965F05827E123D5EFCC29C1C30226B /* Pods-DoorbellBotNative-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71D4CBC88BCE27AFBA5960D71E1BDFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0C2258F54500464208823E2010ECDDA /* Pods-DoorbellBotNativeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		486526E2F3A85AA88B0DA2D20F0CD9B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DoorbellBotNative";
+			target = 27F864CB230B8A570E86CE8F294876D4 /* Pods-DoorbellBotNative */;
+			targetProxy = FF4A934B30387B5FCFA17B1E827F45EA /* PBXContainerItemProxy */;
+		};
+		837FB15BE91EFE337C66DD5B525E4803 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DoorbellBotNative";
+			target = 27F864CB230B8A570E86CE8F294876D4 /* Pods-DoorbellBotNative */;
+			targetProxy = AAB8B67761C63F1FCB7A4636DAD9AF76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01721BBE2DD94B949180EEF5F0EE852C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 128B94662847B738C653C3A04945D4D6 /* Pods-DoorbellBotNativeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07AC8A11F09E0EC28473D417557A6F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C51CB99F0DCA30C38BA1B3A33803BFBC /* Pods-DoorbellBotNativeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C6993C08159D9E161BFDB6C178C61FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA7E7CD0179CA86B8E02630DDC1279D /* Pods-DoorbellBotNativeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40B45BB3CF3EE4476259302A7FAAD78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4A8257A287E9B18272AAC93733EAAF70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBBE3FD834B656C0D8B8C4A8FB6E5962 /* Pods-DoorbellBotNativeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85ED3013A635C27F8B7FAF51362B108C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8FBB73744618928B08141D42B30ED3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB9EDD4AC1C473D8106019DEB811DDA3 /* Pods-DoorbellBotNative.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC21D475F2463CEE444C7D49CB9D4164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B04731DA2BE48E9CCABE169BBEFF9CE /* Pods-DoorbellBotNative.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85ED3013A635C27F8B7FAF51362B108C /* Debug */,
+				40B45BB3CF3EE4476259302A7FAAD78F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51768CEF0DEE713C8FEA6DFA0CA9D4F1 /* Build configuration list for PBXNativeTarget "Pods-DoorbellBotNativeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8257A287E9B18272AAC93733EAAF70 /* Debug */,
+				2C6993C08159D9E161BFDB6C178C61FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88D9590AD88055FB8518E08A3F2E04E4 /* Build configuration list for PBXNativeTarget "Pods-DoorbellBotNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC21D475F2463CEE444C7D49CB9D4164 /* Debug */,
+				8FBB73744618928B08141D42B30ED3AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2C67085CE5C540388EFCB962BCBA0A /* Build configuration list for PBXNativeTarget "Pods-DoorbellBotNativeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01721BBE2DD94B949180EEF5F0EE852C /* Debug */,
+				07AC8A11F09E0EC28473D417557A6F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
