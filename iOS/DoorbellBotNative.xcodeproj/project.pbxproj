@@ -16,6 +16,9 @@
 		9BC2DFE721903D44009C6F40 /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC2DFE321903CE9009C6F40 /* SharedCode.framework */; };
 		9BC2DFE821903D44009C6F40 /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC2DFE321903CE9009C6F40 /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9BC2DFF121904F0D009C6F40 /* DoorbellBotNativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2DFF021904F0D009C6F40 /* DoorbellBotNativeUITests.swift */; };
+		9BC2DFFA21905058009C6F40 /* BasicRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2DFF921905058009C6F40 /* BasicRobot.swift */; };
+		9BC2DFFC21905087009C6F40 /* EarlGreyRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2DFFB21905087009C6F40 /* EarlGreyRobot.swift */; };
+		9BC2DFFE21905223009C6F40 /* TestRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2DFFD21905223009C6F40 /* TestRobot.swift */; };
 		BB11EF719C222B9D344D3732 /* libPods-DoorbellBotNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0AFFA2704A8E51D7684F1CC /* libPods-DoorbellBotNative.a */; };
 		CA462B07197A60D47BD7B59F /* libPods-DoorbellBotNativeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1A123F54ED52EC574BF8B1 /* libPods-DoorbellBotNativeUITests.a */; };
 		D65ACD43784A92D7F98ED108 /* libPods-DoorbellBotNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 697F1E9A5E82E037557D4F8B /* libPods-DoorbellBotNativeTests.a */; };
@@ -73,6 +76,9 @@
 		9BC2DFEE21904F0D009C6F40 /* DoorbellBotNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoorbellBotNativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC2DFF021904F0D009C6F40 /* DoorbellBotNativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorbellBotNativeUITests.swift; sourceTree = "<group>"; };
 		9BC2DFF221904F0D009C6F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC2DFF921905058009C6F40 /* BasicRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRobot.swift; sourceTree = "<group>"; };
+		9BC2DFFB21905087009C6F40 /* EarlGreyRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGreyRobot.swift; sourceTree = "<group>"; };
+		9BC2DFFD21905223009C6F40 /* TestRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRobot.swift; sourceTree = "<group>"; };
 		AD1A123F54ED52EC574BF8B1 /* libPods-DoorbellBotNativeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoorbellBotNativeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB4A63B86B63D784498C25D /* Pods-DoorbellBotNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorbellBotNative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorbellBotNative/Pods-DoorbellBotNative.debug.xcconfig"; sourceTree = "<group>"; };
 		B0AFFA2704A8E51D7684F1CC /* libPods-DoorbellBotNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoorbellBotNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,10 +176,21 @@
 		9BC2DFEF21904F0D009C6F40 /* DoorbellBotNativeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				9BC2DFF821905045009C6F40 /* Robots */,
 				9BC2DFF021904F0D009C6F40 /* DoorbellBotNativeUITests.swift */,
 				9BC2DFF221904F0D009C6F40 /* Info.plist */,
 			);
 			path = DoorbellBotNativeUITests;
+			sourceTree = "<group>";
+		};
+		9BC2DFF821905045009C6F40 /* Robots */ = {
+			isa = PBXGroup;
+			children = (
+				9BC2DFF921905058009C6F40 /* BasicRobot.swift */,
+				9BC2DFFB21905087009C6F40 /* EarlGreyRobot.swift */,
+				9BC2DFFD21905223009C6F40 /* TestRobot.swift */,
+			);
+			path = Robots;
 			sourceTree = "<group>";
 		};
 		F2C7C93D3E4FEB8D3F38F3D1 /* Frameworks */ = {
@@ -449,7 +466,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC2DFFE21905223009C6F40 /* TestRobot.swift in Sources */,
 				9BC2DFF121904F0D009C6F40 /* DoorbellBotNativeUITests.swift in Sources */,
+				9BC2DFFC21905087009C6F40 /* EarlGreyRobot.swift in Sources */,
+				9BC2DFFA21905058009C6F40 /* BasicRobot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +545,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../SharedCode/build/xcode-frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -586,6 +607,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../SharedCode/build/xcode-frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -612,7 +634,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V248Y6WK6M;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../SharedCode/build/xcode-frameworks";
 				INFOPLIST_FILE = DoorbellBotNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -633,7 +654,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V248Y6WK6M;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../SharedCode/build/xcode-frameworks";
 				INFOPLIST_FILE = DoorbellBotNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

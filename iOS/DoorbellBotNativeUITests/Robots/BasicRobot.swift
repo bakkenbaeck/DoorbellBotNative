@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+protocol BasicRobot {
+    func confirmViewVisibleWith(accessibilityLabel: String,
+                                file: StaticString,
+                                line: UInt)
+    
+    func confirmViewVisibleWith(accessiblityIdentifier: String,
+                                file: StaticString,
+                                line: UInt)
+}

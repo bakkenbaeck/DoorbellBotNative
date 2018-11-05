@@ -8,10 +8,11 @@
 
 import XCTest
 @testable import DoorbellBotNative
+import SharedCode
 
 class DoorbellBotNativeTests: XCTestCase {
     
-    func testsShouldBeImplemented() {
-        XCTFail("We should probably add some tests here")
+    func testKotlinNativeSeesiOS() {
+        XCTAssertTrue(CommonKt.createApplicationScreenMessage().contains("iOS"))
     }
 }
