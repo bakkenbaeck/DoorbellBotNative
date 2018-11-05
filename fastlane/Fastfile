@@ -97,7 +97,6 @@ platform :ios do
   def run_tests
     # Build and run all unit + UI tests
     scan(
-        # workspace: Properties::File::WorkspaceFile,
         project: Properties::File::ProjectFile,
         scheme: Properties::BuildScheme::Tests,
         skip_slack: !is_ci, # only let us know if we're on CI
