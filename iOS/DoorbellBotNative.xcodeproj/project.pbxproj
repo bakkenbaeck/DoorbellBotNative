@@ -347,7 +347,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$SRCROOT/../SharedCode/build/xcode-frameworks\"\n./gradlew :SharedCode:packForXCode\n";
+			shellScript = "if ! [ -x \"$(command -v gradle)\" ]; then\n    echo \"Not trying to build the framework again, no gradle for you\"\n    exit 0\nfi\n\necho \"Building Kotlin/Native Framework...\"\n\ncd \"$SRCROOT/../SharedCode/build/xcode-frameworks\"\n./gradlew :SharedCode:packForXCode\n";
 		};
 		4B5DBBF2B79A0752AF2719AA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
