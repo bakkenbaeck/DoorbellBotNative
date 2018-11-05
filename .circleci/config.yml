@@ -1,0 +1,40 @@
+version: 2
+jobs:
+  shared:
+    - image: circleci/android:api-27-alpha
+    working_directory: ~/DoorbellBotNative
+    - steps:
+      - checkout
+      - run:
+        name: KTLint
+        command: ./gradlew ktlint
+      - run:
+        name: ./gradlew testRelease
+  ios:
+    macos:
+      xcode: "10.1.0"
+    steps:
+      - checkout
+      - run:
+        name: Run All Tests
+        command: bundle exec fastlane test_all
+  android:
+    docker:
+      - image: circleci/android:api-27-alpha
+    working_directory: ~/DoorbellBotNative
+    steps:
+      - checkout
+      - run:
+        name: KTLint
+        command: ./gradlew ktlint
+      - run:
+        name: Assemble & Test
+        command: ./gradlew testRelease
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - shared
+      - ios
+      - android
