@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
@@ -42,7 +43,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2EDC3838218C5B87007AD581"
+               BlueprintIdentifier = "9BC2DFED21904F0D009C6F40"
                BuildableName = "DoorbellBotNativeUITests.xctest"
                BlueprintName = "DoorbellBotNativeUITests"
                ReferencedContainer = "container:DoorbellBotNative.xcodeproj">
