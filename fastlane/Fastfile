@@ -98,36 +98,12 @@ platform :ios do
     # Build and run all unit + UI tests
     scan(
         workspace: Properties::File::WorkspaceFile,
-        scheme: Properties::BuildScheme::Distribution,
+        scheme: Properties::BuildScheme::Tests,
         skip_slack: !is_ci, # only let us know if we're on CI
         output_directory: FolderPath::TestOutput,
         derived_data_path: FolderPath::DerivedData,
         clean: !is_ci, # We don't need to clean if we're on CI since we're checking out into a container
         skip_build: true, # The test action will already kick off a build, don't build twice,
-    )
-  end
-
-  def run_coverage
-    # Files to ignore in code coverage, as an array of strings. Wildcards may be used.
-    coverage_files_to_ignore = [
-      'Pods/*',
-      'Carthage/*',
-      'GitHub/*',
-      'danger/*',
-    ]
-
-    # Run Code Coverage
-    slather(
-      cobertura_xml: true,
-      proj: Properties::File::ProjectFile,
-      workspace: Properties::File::WorkspaceFile,
-      input_format: 'profdata',
-      scheme: Properties::BuildScheme::Distribution,
-      use_bundle_exec: true,
-      build_directory: FolderPath::DerivedData,
-      output_directory: FolderPath::TestOutput,
-      ignore: coverage_files_to_ignore,
-      jenkins: is_ci,
     )
   end
 
