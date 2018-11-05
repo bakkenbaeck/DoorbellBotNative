@@ -44,9 +44,10 @@ jobs:
       - run:
           name: Headless Unit Tests
           command: ./gradlew :android:test
-      - run:
-          name: Instrumented Tests
-          command: ./gradlew :android:connectedAndroidTest
+      # If we decide to do any instrumented/espresso tests, here's a sample of what we'd need to do: https://stackoverflow.com/questions/52283250/circleci-2-0-android-espresso-no-config-found-and-no-tests-errors/52302067
+      #- run:
+      #    name: Instrumented Tests
+      #    command: ./gradlew :android:connectedAndroidTest
 
 workflows:
   version: 2
