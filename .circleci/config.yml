@@ -2,7 +2,6 @@ version: 2
 jobs:
   shared:
     - image: circleci/android:api-27-alpha
-    working_directory: ~/DoorbellBotNative
     - steps:
       - checkout
       - run:
@@ -21,7 +20,6 @@ jobs:
   android:
     docker:
       - image: circleci/android:api-27-alpha
-    working_directory: ~/DoorbellBotNative
     steps:
       - checkout
       - run:
