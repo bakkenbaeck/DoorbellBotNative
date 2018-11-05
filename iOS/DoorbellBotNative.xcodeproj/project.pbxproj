@@ -19,9 +19,6 @@
 		9BC2DFFA21905058009C6F40 /* BasicRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2DFF921905058009C6F40 /* BasicRobot.swift */; };
 		9BC2DFFC21905087009C6F40 /* EarlGreyRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2DFFB21905087009C6F40 /* EarlGreyRobot.swift */; };
 		9BC2DFFE21905223009C6F40 /* TestRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2DFFD21905223009C6F40 /* TestRobot.swift */; };
-		BB11EF719C222B9D344D3732 /* libPods-DoorbellBotNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0AFFA2704A8E51D7684F1CC /* libPods-DoorbellBotNative.a */; };
-		CA462B07197A60D47BD7B59F /* libPods-DoorbellBotNativeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1A123F54ED52EC574BF8B1 /* libPods-DoorbellBotNativeUITests.a */; };
-		D65ACD43784A92D7F98ED108 /* libPods-DoorbellBotNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 697F1E9A5E82E037557D4F8B /* libPods-DoorbellBotNativeTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +88,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC2DFE721903D44009C6F40 /* SharedCode.framework in Frameworks */,
-				BB11EF719C222B9D344D3732 /* libPods-DoorbellBotNative.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D65ACD43784A92D7F98ED108 /* libPods-DoorbellBotNativeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA462B07197A60D47BD7B59F /* libPods-DoorbellBotNativeUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
