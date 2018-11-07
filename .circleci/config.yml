@@ -1,0 +1,58 @@
+version: 2
+jobs:
+  shared:
+    docker:
+      - image: circleci/android:api-27-alpha
+    steps:
+      - checkout
+      - run:
+          name: KTLint
+          command: ./gradlew ktlintCheck
+      - run:
+          name: Assemble
+          command: ./gradlew assemble
+      - run:
+          name: Assemble & Test Shared Framework
+          command: ./gradlew testRelease
+  ios:
+    macos:
+      xcode: "10.0.0"
+    steps:
+      - checkout
+      - restore_cache:
+          key: "v2-gems"
+      - run:
+          name: Install with bundler
+          command: bundle check || bundle install --path .bundle
+      - save_cache:
+          key: "v2-gems"
+          paths: ["./.bundle"]
+      - run:
+          name: Run All Tests
+          command: bundle exec fastlane ios ci_test
+  android:
+    docker:
+      - image: circleci/android:api-27-alpha
+    steps:
+      - checkout
+      - run:
+          name: KTLint
+          command: ./gradlew ktlintCheck
+      - run:
+          name: Assemble
+          command: ./gradlew assemble
+      - run:
+          name: Headless Unit Tests
+          command: ./gradlew :android:test
+      # If we decide to do any instrumented/espresso tests, here's a sample of what we'd need to do: https://stackoverflow.com/questions/52283250/circleci-2-0-android-espresso-no-config-found-and-no-tests-errors/52302067
+      #- run:
+      #    name: Instrumented Tests
+      #    command: ./gradlew :android:connectedAndroidTest
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - shared
+      - ios
+      - android

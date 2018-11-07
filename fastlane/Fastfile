@@ -1,0 +1,118 @@
+require "./properties.rb"
+
+######################
+# Pre-defined values #
+######################
+
+# Signing types as defined by Match
+class SigningType
+  Development = "development"
+  AdHoc = "ad-hoc"
+  AppStore = "appstore"
+end
+
+class ExportMethod
+  Development = "development"
+  AdHoc = "ad-hoc"
+  AppStore = "app-store"
+end
+
+class FolderPath
+  # The root fastlane folder
+  Fastlane = "fastlane"
+  # The output folder for test coverage data
+  TestOutput = File.join(Fastlane, "test_output")
+  # The location where derived data should be placed.
+  DerivedData = File.join(Fastlane, "DerivedData")
+  # The location where the build should be placed
+  Build = File.join(Fastlane, "Build")
+end
+
+################
+# Actual lanes #
+################
+
+platform :ios do
+
+  ##################
+  # SETUP/TEARDOWN #
+  ##################
+
+  before_all do
+    # Happier setup with Match and keychain.
+    setup_circle_ci
+
+    # Make sure Fastlane is using UTF-8
+    ENV["LC_ALL"]="en_US.UTF-8"
+    ENV["LANG"]="en_US.UTF-8"
+
+    unless is_ci
+      # Open-source note: This file is kept private to developers who can release.
+      # TODO: Get local config setup
+      #sh ". ./local_config.sh"
+    end
+  end
+
+  after_all do
+
+  end
+
+  ############
+  # BUILDING #
+  ############
+
+  def build(options)
+    # Validate that required options were passed in
+    unless options.key?(:scheme) && options.key?(:method)
+        raise "To build you need to pass in the scheme and distribution method!"
+        return
+    end
+
+    scheme = options[:scheme]
+    method = options[:method]
+
+    gym(
+      workspace: Properties::File::WorkspaceFile,
+      scheme: scheme,
+      export_method: method,
+      output_directory: FolderPath::Build,
+      derived_data_path: FolderPath::DerivedData,
+      include_bitcode: false,
+      include_symbols: true,
+      clean: !is_ci, # We don't need to clean if we're on CI since we're checking out into a container
+    )
+  end
+
+  def build_app_store
+     build(
+       scheme: Properties::BuildScheme::Distribution,
+       method: ExportMethod::AppStore
+     )
+  end
+
+  ###########
+  # TESTING #
+  ###########
+
+  def run_tests
+    # Build and run all unit + UI tests
+    scan(
+        project: Properties::File::ProjectFile,
+        scheme: Properties::BuildScheme::Tests,
+        skip_slack: !is_ci, # only let us know if we're on CI
+        output_directory: FolderPath::TestOutput,
+        derived_data_path: FolderPath::DerivedData,
+        clean: !is_ci, # We don't need to clean if we're on CI since we're checking out into a container
+        skip_build: true, # The test action will already kick off a build, don't build twice,
+    )
+  end
+
+  ################
+  # PUBLIC LANES #
+  ################
+
+  desc "Builds and tests the application"
+  lane :ci_test do
+    run_tests
+  end
+end
