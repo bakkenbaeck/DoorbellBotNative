@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'DoorbellBotNative' do
   pod 'SwiftLint', '~>0.27.0'
+  pod 'Firebase/Core', '~>5.12.0'
 
   target 'DoorbellBotNativeTests' do
     inherit! :search_paths
