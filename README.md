@@ -17,4 +17,8 @@ A [Kotlin/Native](https://kotlinlang.org/docs/reference/native-overview.html) ap
 
 ## iOS
 
-- The `GoogleService-Info.plist` file, which is ignored in git to avoid leaking credentials. If you're building this project outside the Bakken & Bæck organization, you'll need to create your own Firebase project [here](https://console.firebase.google.com). 
+- The `Scripts/add_secrets_to_env.sh` file (which is ignored from git to avoid leaking secrets). This includes secrets for Firebase Crashlytics. 
+
+  If you are poking at this app via open source and wish to use a different Firebase account:   
+  - Replace the [iOS/DoorbellBotNative/GoogleService-Info.plist](iOS/DoorbellBotNative/GoogleService-Info.plist) file with your own. 
+  - Remove the `Embed secrets` and `Reset Secrets For Later` phases from the build script. 

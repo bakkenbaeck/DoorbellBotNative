@@ -483,7 +483,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = " source ./Scripts/add_secrets_if_there.sh\n";
+			shellScript = "source ./Scripts/add_secrets_if_there.sh\n";
 		};
 		9BF0392F2199CA8F00D3DB22 /* Reset Secrets For Later */ = {
 			isa = PBXShellScriptBuildPhase;
