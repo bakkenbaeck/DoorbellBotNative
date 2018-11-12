@@ -213,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EDC3842218C5B87007AD581 /* Build configuration list for PBXNativeTarget "DoorbellBotNative" */;
 			buildPhases = (
+				9BF0392E2199B7C400D3DB22 /* Embed secrets */,
 				50948DA196F14D27969CAE0A /* [CP] Check Pods Manifest.lock */,
 				2EDC384F218C5F20007AD581 /* Build Kotlin Native Framework */,
 				2EDC3816218C5B85007AD581 /* Sources */,
@@ -222,6 +223,7 @@
 				9BC2DFFF21906B56009C6F40 /* SwiftLint Run Script */,
 				402B64CC2DB30C55DFF58B6D /* [CP] Embed Pods Frameworks */,
 				9BF0392D2199881700D3DB22 /* Crashlytics Run Script */,
+				9BF0392F2199CA8F00D3DB22 /* Reset Secrets For Later */,
 			);
 			buildRules = (
 			);
@@ -464,6 +466,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		9BF0392E2199B7C400D3DB22 /* Embed secrets */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Embed secrets";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = " source ./Scripts/add_secrets_if_there.sh\n";
+		};
+		9BF0392F2199CA8F00D3DB22 /* Reset Secrets For Later */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Reset Secrets For Later";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git checkout HEAD -- \"$SRCROOT/DoorbellBotNative/GoogleService-Info.plist\"\n";
 		};
 		CF1D63D2164D73C80754A722 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

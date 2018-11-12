@@ -26,3 +26,4 @@ fastlane/DerivedData
 fastlane/test_output
 fastlane/report.xml
 GoogleService-Info.plist
+add_secrets_to_env.sh
