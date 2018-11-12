@@ -20,6 +20,34 @@
                ReferencedContainer = "container:DoorbellBotNative.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2EDC382D218C5B86007AD581"
+               BuildableName = "DoorbellBotNativeTests.xctest"
+               BlueprintName = "DoorbellBotNativeTests"
+               ReferencedContainer = "container:DoorbellBotNative.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9BC2DFED21904F0D009C6F40"
+               BuildableName = "DoorbellBotNativeUITests.xctest"
+               BlueprintName = "DoorbellBotNativeUITests"
+               ReferencedContainer = "container:DoorbellBotNative.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
