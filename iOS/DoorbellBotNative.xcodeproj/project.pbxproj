@@ -213,8 +213,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EDC3842218C5B87007AD581 /* Build configuration list for PBXNativeTarget "DoorbellBotNative" */;
 			buildPhases = (
-				9BF0392E2199B7C400D3DB22 /* Embed secrets */,
 				50948DA196F14D27969CAE0A /* [CP] Check Pods Manifest.lock */,
+				9BF0392E2199B7C400D3DB22 /* Embed secrets */,
 				2EDC384F218C5F20007AD581 /* Build Kotlin Native Framework */,
 				2EDC3816218C5B85007AD581 /* Sources */,
 				2EDC3817218C5B85007AD581 /* Frameworks */,
