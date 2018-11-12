@@ -13,7 +13,7 @@ class Properties
 
   # The names of build schemes available for build actions
   class BuildScheme
-    Distribution = "DoorbellBotNative_Two"
+    Distribution = "DoorbellBotNative"
   end
 
   class Target
