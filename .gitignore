@@ -25,3 +25,4 @@ SharedCode/build/tmp
 fastlane/DerivedData
 fastlane/test_output
 fastlane/report.xml
+GoogleService-Info.plist
