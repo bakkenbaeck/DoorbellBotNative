@@ -29,3 +29,4 @@ add_secrets_to_env.sh
 iOS/Scripts/.build
 iOS/Scripts/Scripty.xcodeproj/project.xcworkspace/xcuserdata/ellen.xcuserdatad
 iOS/Scripts/Scripty.xcodeproj/xcuserdata
+.secrets
