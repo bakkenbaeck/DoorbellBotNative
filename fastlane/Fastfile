@@ -39,12 +39,12 @@ platform :ios do
   ##################
 
   before_all do
-    # Happier setup with Match and keychain.
-    setup_circle_ci
-
     # Make sure Fastlane is using UTF-8
     ENV["LC_ALL"]="en_US.UTF-8"
     ENV["LANG"]="en_US.UTF-8"
+
+    # Happier setup with Match and keychain.
+    setup_circle_ci
 
     unless is_ci
       # Open-source note: This file is kept private to developers who can release.
@@ -97,8 +97,8 @@ platform :ios do
   def run_tests
     # Build and run all unit + UI tests
     scan(
-        project: Properties::File::ProjectFile,
-        scheme: Properties::BuildScheme::Tests,
+        workspace: Properties::File::WorkspaceFile,
+        scheme: Properties::BuildScheme::Distribution,
         skip_slack: !is_ci, # only let us know if we're on CI
         output_directory: FolderPath::TestOutput,
         derived_data_path: FolderPath::DerivedData,

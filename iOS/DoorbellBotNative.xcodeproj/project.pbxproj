@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1A0E7F9EC93CA6256C73B5 /* Pods_DoorbellBotNativeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068C3043F775B952FB7E4564 /* Pods_DoorbellBotNativeUITests.framework */; };
+		15CA30DBC77E5A138C2378CD /* Pods_DoorbellBotNativeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DBA01B437D3E17D01B3655F /* Pods_DoorbellBotNativeTests.framework */; };
 		2EDC381E218C5B85007AD581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC381D218C5B85007AD581 /* AppDelegate.swift */; };
 		2EDC3820218C5B85007AD581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC381F218C5B85007AD581 /* ViewController.swift */; };
 		2EDC3823218C5B85007AD581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDC3821218C5B85007AD581 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 		9BC2DFFA21905058009C6F40 /* BasicRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2DFF921905058009C6F40 /* BasicRobot.swift */; };
 		9BC2DFFC21905087009C6F40 /* EarlGreyRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2DFFB21905087009C6F40 /* EarlGreyRobot.swift */; };
 		9BC2DFFE21905223009C6F40 /* TestRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2DFFD21905223009C6F40 /* TestRobot.swift */; };
+		9BF0392C219983A500D3DB22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BF0392B219983A500D3DB22 /* GoogleService-Info.plist */; };
+		EF9AD5DFB513616BD1E4A6EE /* Pods_DoorbellBotNative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7AF4FC2863A00E4158AF35 /* Pods_DoorbellBotNative.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		068C3043F775B952FB7E4564 /* Pods_DoorbellBotNativeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoorbellBotNativeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DBA01B437D3E17D01B3655F /* Pods_DoorbellBotNativeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoorbellBotNativeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		244A37537ECF768A7CD0871F /* Pods-DoorbellBotNativeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorbellBotNativeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorbellBotNativeUITests/Pods-DoorbellBotNativeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2D7BF96D16350F88F349F575 /* Pods-DoorbellBotNativeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorbellBotNativeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorbellBotNativeUITests/Pods-DoorbellBotNativeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2EDC381A218C5B85007AD581 /* DoorbellBotNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorbellBotNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +72,6 @@
 		2EDC3832218C5B86007AD581 /* DoorbellBotNativeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorbellBotNativeTests.swift; sourceTree = "<group>"; };
 		2EDC3834218C5B86007AD581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4372A161E85173B19DE4AD81 /* Pods-DoorbellBotNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorbellBotNativeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorbellBotNativeTests/Pods-DoorbellBotNativeTests.release.xcconfig"; sourceTree = "<group>"; };
-		697F1E9A5E82E037557D4F8B /* libPods-DoorbellBotNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoorbellBotNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AE0E674F8F7291DFED2809 /* Pods-DoorbellBotNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorbellBotNative.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoorbellBotNative/Pods-DoorbellBotNative.release.xcconfig"; sourceTree = "<group>"; };
 		9BC2DFE321903CE9009C6F40 /* SharedCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedCode.framework; path = "../SharedCode/build/xcode-frameworks/SharedCode.framework"; sourceTree = "<group>"; };
 		9BC2DFE921904CEE009C6F40 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -76,9 +81,9 @@
 		9BC2DFF921905058009C6F40 /* BasicRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRobot.swift; sourceTree = "<group>"; };
 		9BC2DFFB21905087009C6F40 /* EarlGreyRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGreyRobot.swift; sourceTree = "<group>"; };
 		9BC2DFFD21905223009C6F40 /* TestRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRobot.swift; sourceTree = "<group>"; };
-		AD1A123F54ED52EC574BF8B1 /* libPods-DoorbellBotNativeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoorbellBotNativeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF0392B219983A500D3DB22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AFB4A63B86B63D784498C25D /* Pods-DoorbellBotNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorbellBotNative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorbellBotNative/Pods-DoorbellBotNative.debug.xcconfig"; sourceTree = "<group>"; };
-		B0AFFA2704A8E51D7684F1CC /* libPods-DoorbellBotNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoorbellBotNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7AF4FC2863A00E4158AF35 /* Pods_DoorbellBotNative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoorbellBotNative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA5602B2EF364ECAB35915E /* Pods-DoorbellBotNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorbellBotNativeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoorbellBotNativeTests/Pods-DoorbellBotNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC2DFE721903D44009C6F40 /* SharedCode.framework in Frameworks */,
+				EF9AD5DFB513616BD1E4A6EE /* Pods_DoorbellBotNative.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15CA30DBC77E5A138C2378CD /* Pods_DoorbellBotNativeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F1A0E7F9EC93CA6256C73B5 /* Pods_DoorbellBotNativeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +161,7 @@
 				2EDC3821218C5B85007AD581 /* Main.storyboard */,
 				2EDC3824218C5B86007AD581 /* Assets.xcassets */,
 				2EDC3826218C5B86007AD581 /* LaunchScreen.storyboard */,
+				9BF0392B219983A500D3DB22 /* GoogleService-Info.plist */,
 				2EDC3829218C5B86007AD581 /* Info.plist */,
 			);
 			path = DoorbellBotNative;
@@ -190,9 +199,9 @@
 		F2C7C93D3E4FEB8D3F38F3D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B0AFFA2704A8E51D7684F1CC /* libPods-DoorbellBotNative.a */,
-				697F1E9A5E82E037557D4F8B /* libPods-DoorbellBotNativeTests.a */,
-				AD1A123F54ED52EC574BF8B1 /* libPods-DoorbellBotNativeUITests.a */,
+				BC7AF4FC2863A00E4158AF35 /* Pods_DoorbellBotNative.framework */,
+				0DBA01B437D3E17D01B3655F /* Pods_DoorbellBotNativeTests.framework */,
+				068C3043F775B952FB7E4564 /* Pods_DoorbellBotNativeUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,12 +214,16 @@
 			buildConfigurationList = 2EDC3842218C5B87007AD581 /* Build configuration list for PBXNativeTarget "DoorbellBotNative" */;
 			buildPhases = (
 				50948DA196F14D27969CAE0A /* [CP] Check Pods Manifest.lock */,
+				9BF0392E2199B7C400D3DB22 /* Embed secrets */,
 				2EDC384F218C5F20007AD581 /* Build Kotlin Native Framework */,
 				2EDC3816218C5B85007AD581 /* Sources */,
 				2EDC3817218C5B85007AD581 /* Frameworks */,
 				2EDC3818218C5B85007AD581 /* Resources */,
 				9BC2DFE621903CE9009C6F40 /* Embed Frameworks */,
 				9BC2DFFF21906B56009C6F40 /* SwiftLint Run Script */,
+				402B64CC2DB30C55DFF58B6D /* [CP] Embed Pods Frameworks */,
+				9BF0392D2199881700D3DB22 /* Crashlytics Run Script */,
+				9BF0392F2199CA8F00D3DB22 /* Reset Secrets For Later */,
 			);
 			buildRules = (
 			);
@@ -309,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EDC3828218C5B86007AD581 /* LaunchScreen.storyboard in Resources */,
+				9BF0392C219983A500D3DB22 /* GoogleService-Info.plist in Resources */,
 				2EDC3825218C5B86007AD581 /* Assets.xcassets in Resources */,
 				2EDC3823218C5B85007AD581 /* Main.storyboard in Resources */,
 			);
@@ -348,6 +362,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if ! [ -x \"$(command -v gradle)\" ]; then\n    echo \"Not trying to build the framework again, no gradle for you\"\n    exit 0\nfi\n\necho \"Building Kotlin/Native Framework...\"\n\ncd \"$SRCROOT/../SharedCode/build/xcode-frameworks\"\n./gradlew :SharedCode:packForXCode\n";
+		};
+		402B64CC2DB30C55DFF58B6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DoorbellBotNative/Pods-DoorbellBotNative-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoorbellBotNative/Pods-DoorbellBotNative-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		4B5DBBF2B79A0752AF2719AA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -410,6 +448,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		9BF0392D2199881700D3DB22 /* Crashlytics Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Crashlytics Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		9BF0392E2199B7C400D3DB22 /* Embed secrets */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Embed secrets";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "source ./Scripts/add_secrets_if_there.sh\n";
+		};
+		9BF0392F2199CA8F00D3DB22 /* Reset Secrets For Later */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Reset Secrets For Later";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git checkout HEAD -- \"$SRCROOT/DoorbellBotNative/GoogleService-Info.plist\"\n";
 		};
 		CF1D63D2164D73C80754A722 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -645,6 +737,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = V248Y6WK6M;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DoorbellBotNative/Info.plist;

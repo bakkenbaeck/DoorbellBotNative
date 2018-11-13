@@ -13,7 +13,6 @@ class Properties
 
   # The names of build schemes available for build actions
   class BuildScheme
-    Tests = "Tests"
     Distribution = "DoorbellBotNative"
   end
 
