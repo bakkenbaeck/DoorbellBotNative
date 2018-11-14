@@ -22,6 +22,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    afterEvaluate {
+        assembleDebug.finalizedBy(resetGoogleServicesFile)
+    }
 }
 
 dependencies {
@@ -145,14 +148,13 @@ task replaceGoogleServices {
 
 task resetGoogleServicesFile {
     def servicesJSONFile = rootProject.file('android/google-services.json')
-    "git checkout HEAD -- ${servicesJSONFile.path}".execute()
+    println "WTF"
+    println "pwd".execute().getText()
+    println "git checkout HEAD -- ${servicesJSONFile.path}".execute().getText()
 }
 
 
+// OPEN SOURCE: Comment out this line if you're using your own google services info
 preBuild.dependsOn replaceGoogleServices
-
-build.doLast {
-    resetGoogleServicesFile
-}
 
 apply plugin: 'com.google.gms.google-services'
