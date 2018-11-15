@@ -52,12 +52,6 @@
             ReferencedContainer = "container:Scripty.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "src=/Users/ellen/Desktop/Work/BB_Internal/Code/DoorbellBotNative/iOS"
-            isEnabled = "YES">
-         </CommandLineArgument>
-      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
