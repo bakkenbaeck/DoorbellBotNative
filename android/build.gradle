@@ -59,59 +59,60 @@ dependencies {
 
 // SECRET LOADING!
 
-def loadSecrets() {
-    def secrets = loadSecretsFromProperties()
-    if (secrets == null) {
-        secrets = loadSecretsFromEnv()
-    }
-
-    assert(secrets != null)
-
-    return secrets
-}
-
-def loadSecretsFromProperties() {
-    def secretsPropertiesFile = rootProject.file(".secrets/android_secrets.properties")
-    def secretsProperties = new Properties()
-
-    try {
-        secretsProperties.load(new FileInputStream(secretsPropertiesFile))
-        println "Loaded secrets from local file..."
-    } catch (FileNotFoundException e) {
-        // File was not found, try to load from env.
-        return null
-    }
-
-    return secretsProperties
-}
-
-def getEnvirnomentValue(key) {
-    return System.getenv().get(key, null)
-}
-
-def loadSecretsFromEnv() {
-
-    def url = getEnvirnomentValue(firebaseUrlKey)
-
-    if (url == null) {
-        return null
-    }
-
-    println("Loading secrets from env...")
-
-    def secretsProperties = new Properties()
-    secretsProperties.put(firebaseProjectNumberKey, getEnvirnomentValue(firebaseProjectNumberKey))
-    secretsProperties.put(firebaseUrlKey, getEnvirnomentValue(firebaseUrlKey))
-    secretsProperties.put(firebaseProjectIdKey, getEnvirnomentValue(firebaseProjectIdKey))
-    secretsProperties.put(firebaseStorageBucketKey, getEnvirnomentValue(firebaseStorageBucketKey))
-    secretsProperties.put(firebaseAppIdKey, getEnvironmentValue(firebaseAppIdKey))
-    secretsProperties.put(firebaseOAuthClientIdKey, getEnvirnomentValue(firebaseOAuthClientIdKey))
-    secretsProperties.put(firebaseCurrentKeyKey, getEnvirnomentValue(firebaseCurrentKeyKey))
-
-    return secretsProperties
-}
-
 task replaceGoogleServices {
+    ext.loadSecrets = {
+        def secrets = loadSecretsFromProperties()
+        if (secrets == null) {
+            secrets = loadSecretsFromEnv()
+        }
+
+        assert(secrets != null)
+
+        return secrets
+    }
+
+    ext.loadSecretsFromProperties = {
+        def secretsPropertiesFile = rootProject.file(".secrets/android_secrets.properties")
+        def secretsProperties = new Properties()
+
+        try {
+            secretsProperties.load(new FileInputStream(secretsPropertiesFile))
+            println "Loaded secrets from local file..."
+        } catch (FileNotFoundException e) {
+            // File was not found, try to load from env.
+            return null
+        }
+
+        return secretsProperties
+    }
+
+    ext.getEnvirnomentValue = { key ->
+        return System.getenv().get(key, null)
+    }
+
+    ext.loadSecretsFromEnv = {
+
+        def url = getEnvirnomentValue(firebaseUrlKey)
+
+        if (url == null) {
+            return null
+        }
+
+        println("Loading secrets from env...")
+
+        def secretsProperties = new Properties()
+        secretsProperties.put(firebaseProjectNumberKey, getEnvirnomentValue(firebaseProjectNumberKey))
+        secretsProperties.put(firebaseUrlKey, getEnvirnomentValue(firebaseUrlKey))
+        secretsProperties.put(firebaseProjectIdKey, getEnvirnomentValue(firebaseProjectIdKey))
+        secretsProperties.put(firebaseStorageBucketKey, getEnvirnomentValue(firebaseStorageBucketKey))
+        secretsProperties.put(firebaseAppIdKey, getEnvironmentValue(firebaseAppIdKey))
+        secretsProperties.put(firebaseOAuthClientIdKey, getEnvirnomentValue(firebaseOAuthClientIdKey))
+        secretsProperties.put(firebaseCurrentKeyKey, getEnvirnomentValue(firebaseCurrentKeyKey))
+
+        return secretsProperties
+    }
+
+
     doLast {
         def secrets = loadSecrets()
 
