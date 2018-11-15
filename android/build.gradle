@@ -89,14 +89,6 @@ def getEnvirnomentValue(key) {
     return System.getenv().get(key, null)
 }
 
-def firebaseUrlKey = "FIR_ANDROID_URL"
-def firebaseProjectNumberKey = "FIR_ANDROID_PROJECT_NUMBER"
-def firebaseProjectIdKey = "FIR_ANDRIOID_PROJECT_ID"
-def firebaseStorageBucketKey = "FIR_ANDROID_STORAGE_BUCKET"
-def firebaseAppIdKey = "FIR_ANDROID_APP_ID"
-def firebaseOAuthClientIdKey = "FIR_ANDROID_OAUTH_CLIENT_ID"
-def firebaseCurrentKeyKey = "FIR_ANDROID_CURRENT_KEY"
-
 def loadSecretsFromEnv() {
 
     def url = getEnvirnomentValue(firebaseUrlKey)
