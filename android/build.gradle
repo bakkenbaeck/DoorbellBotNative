@@ -164,8 +164,7 @@ def resetGoogleServicesFile() {
 // OPEN SOURCE: Comment out until the next newline if you're using your own `google-services.json`
 preBuild.dependsOn replaceGoogleServices
 gradle.taskGraph.afterTask { Task task ->
-    if (task.name.startsWith("assemble") ||
-            (task.name.startsWith("generate") && task.name.endsWith("Sources"))) {
+    if (task == gradle.taskGraph.allTasks.last()) {
         resetGoogleServicesFile()
     }
 }
