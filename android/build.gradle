@@ -22,9 +22,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    afterEvaluate {
-        assembleDebug.finalizedBy(resetGoogleServicesFile)
-    }
 }
 
 dependencies {
@@ -76,7 +73,15 @@ def loadSecrets() {
 def loadSecretsFromProperties() {
     def secretsPropertiesFile = rootProject.file(".secrets/android_secrets.properties")
     def secretsProperties = new Properties()
-    secretsProperties.load(new FileInputStream(secretsPropertiesFile))
+
+    try {
+        secretsProperties.load(new FileInputStream(secretsPropertiesFile))
+        println "Loaded secrets from local file..."
+    } catch (FileNotFoundException e) {
+        // File was not found, try to load from env.
+        return null
+    }
+
     return secretsProperties
 }
 
@@ -91,6 +96,8 @@ def loadSecretsFromEnv() {
     if (url == null) {
         return null
     }
+
+    println("Loading secrets from env...")
 
     def secretsProperties = new Properties()
     secretsProperties.put("firebaseProjectNumber", getEnvirnomentValue("FIR_ANDROID_PROJECT_NUMBER"))
@@ -146,15 +153,19 @@ task replaceGoogleServices {
     }
 }
 
-task resetGoogleServicesFile {
+def resetGoogleServicesFile() {
     def servicesJSONFile = rootProject.file('android/google-services.json')
-    println "WTF"
-    println "pwd".execute().getText()
-    println "git checkout HEAD -- ${servicesJSONFile.path}".execute().getText()
+    "git checkout HEAD -- ${servicesJSONFile.path}".execute()
 }
 
 
-// OPEN SOURCE: Comment out this line if you're using your own google services info
+// OPEN SOURCE: Comment out until the next newline if you're using your own `google-services.json`
 preBuild.dependsOn replaceGoogleServices
+gradle.taskGraph.afterTask { Task task ->
+    if (task.name.startsWith("assemble") ||
+            (task.name.startsWith("generate") && task.name.endsWith("Sources"))) {
+        resetGoogleServicesFile()
+    }
+}
 
 apply plugin: 'com.google.gms.google-services'
