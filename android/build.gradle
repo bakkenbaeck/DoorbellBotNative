@@ -86,7 +86,7 @@ task replaceGoogleServices {
         return secretsProperties
     }
 
-    ext.getEnvirnomentValue = { key ->
+    ext.getEnvironmentValue = { key ->
         return System.getenv().get(key, null)
     }
 
@@ -101,13 +101,13 @@ task replaceGoogleServices {
         println("Loading secrets from env...")
 
         def secretsProperties = new Properties()
-        secretsProperties.put(firebaseProjectNumberKey, getEnvirnomentValue(firebaseProjectNumberKey))
-        secretsProperties.put(firebaseUrlKey, getEnvirnomentValue(firebaseUrlKey))
-        secretsProperties.put(firebaseProjectIdKey, getEnvirnomentValue(firebaseProjectIdKey))
-        secretsProperties.put(firebaseStorageBucketKey, getEnvirnomentValue(firebaseStorageBucketKey))
+        secretsProperties.put(firebaseProjectNumberKey, getEnvironmentValue(firebaseProjectNumberKey))
+        secretsProperties.put(firebaseUrlKey, getEnvironmentValue(firebaseUrlKey))
+        secretsProperties.put(firebaseProjectIdKey, getEnvironmentValue(firebaseProjectIdKey))
+        secretsProperties.put(firebaseStorageBucketKey, getEnvironmentValue(firebaseStorageBucketKey))
         secretsProperties.put(firebaseAppIdKey, getEnvironmentValue(firebaseAppIdKey))
-        secretsProperties.put(firebaseOAuthClientIdKey, getEnvirnomentValue(firebaseOAuthClientIdKey))
-        secretsProperties.put(firebaseCurrentKeyKey, getEnvirnomentValue(firebaseCurrentKeyKey))
+        secretsProperties.put(firebaseOAuthClientIdKey, getEnvironmentValue(firebaseOAuthClientIdKey))
+        secretsProperties.put(firebaseCurrentKeyKey, getEnvironmentValue(firebaseCurrentKeyKey))
 
         return secretsProperties
     }
