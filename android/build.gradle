@@ -91,7 +91,6 @@ task replaceGoogleServices {
     }
 
     ext.loadSecretsFromEnv = {
-
         def url = getEnvironmentValue(firebaseUrlKey)
 
         if (url == null) {
@@ -111,7 +110,6 @@ task replaceGoogleServices {
 
         return secretsProperties
     }
-
 
     doLast {
         def secrets = loadSecrets()
