@@ -19,11 +19,11 @@ let package = Package(
     dependencies: [
         .package(
           url: "https://github.com/JohnSundell/Files.git",
-          from: "2.0.0"
+          .upToNextMinor(from: "2.2.1")
         ),
         .package(
           url: "https://github.com/JohnSundell/ShellOut.git",
-          from: "2.0.0"
+          .upToNextMinor(from: "2.1.0")
         ),
     ],
     targets: [
