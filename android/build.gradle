@@ -89,9 +89,17 @@ def getEnvirnomentValue(key) {
     return System.getenv().get(key, null)
 }
 
+def firebaseUrlKey = "FIR_ANDROID_URL"
+def firebaseProjectNumberKey = "FIR_ANDROID_PROJECT_NUMBER"
+def firebaseProjectIdKey = "FIR_ANDRIOID_PROJECT_ID"
+def firebaseStorageBucketKey = "FIR_ANDROID_STORAGE_BUCKET"
+def firebaseAppIdKey = "FIR_ANDROID_APP_ID"
+def firebaseOAuthClientIdKey = "FIR_ANDROID_OAUTH_CLIENT_ID"
+def firebaseCurrentKeyKey = "FIR_ANDROID_CURRENT_KEY"
+
 def loadSecretsFromEnv() {
 
-    def url = getEnvirnomentValue("FIR_ANDROID_URL")
+    def url = getEnvirnomentValue(firebaseUrlKey)
 
     if (url == null) {
         return null
@@ -100,13 +108,13 @@ def loadSecretsFromEnv() {
     println("Loading secrets from env...")
 
     def secretsProperties = new Properties()
-    secretsProperties.put("firebaseProjectNumber", getEnvirnomentValue("FIR_ANDROID_PROJECT_NUMBER"))
-    secretsProperties.put("firebaseUrl", getEnvirnomentValue("FIR_ANDROID_URL"))
-    secretsProperties.put("firebaseProjectId", getEnvirnomentValue("FIR_PROJECT_ID"))
-    secretsProperties.put("firebaseStorageBucket", getEnvirnomentValue("FIR_ANDROID_STORAGE_BUCKET"))
-    secretsProperties.put("firebaseAppId", getEnvironmentValue("FIR_ANDROID_APP_ID"))
-    secretsProperties.put("firebaseOAuthClientId", getEnvirnomentValue("FIR_ANDROID_OAUTH_CLIENT_ID"))
-    secretsProperties.put("firebaseCurrentKey", getEnvirnomentValue("FIR_CURRENT_KEY"))
+    secretsProperties.put(firebaseProjectNumberKey, getEnvirnomentValue(firebaseProjectNumberKey))
+    secretsProperties.put(firebaseUrlKey, getEnvirnomentValue(firebaseUrlKey))
+    secretsProperties.put(firebaseProjectIdKey, getEnvirnomentValue(firebaseProjectIdKey))
+    secretsProperties.put(firebaseStorageBucketKey, getEnvirnomentValue(firebaseStorageBucketKey))
+    secretsProperties.put(firebaseAppIdKey, getEnvironmentValue(firebaseAppIdKey))
+    secretsProperties.put(firebaseOAuthClientIdKey, getEnvirnomentValue(firebaseOAuthClientIdKey))
+    secretsProperties.put(firebaseCurrentKeyKey, getEnvirnomentValue(firebaseCurrentKeyKey))
 
     return secretsProperties
 }
@@ -121,31 +129,31 @@ task replaceGoogleServices {
         def parsedJSON = new JsonSlurper().parseText(servicesJSONFile.text)
         def builder = new JsonBuilder(parsedJSON)
 
-        def projectNumber = secrets.getProperty("firebaseProjectNumber")
+        def projectNumber = secrets.getProperty(firebaseProjectNumberKey)
         assert(projectNumber != null)
         builder.content.project_info.project_number = projectNumber
 
-        def url = secrets.getProperty("firebaseUrl")
+        def url = secrets.getProperty(firebaseUrlKey)
         assert(url != null)
         builder.content.project_info.firebase_url = url
 
-        def projectId = secrets.getProperty("firebaseProjectId")
+        def projectId = secrets.getProperty(firebaseProjectIdKey)
         assert(projectId != null)
         builder.content.project_info.project_id = projectId
 
-        def storageBucket = secrets.getProperty("firebaseStorageBucket")
+        def storageBucket = secrets.getProperty(firebaseStorageBucketKey)
         assert(storageBucket != null)
         builder.content.project_info.storage_bucket = storageBucket
 
-        def appId = secrets.getProperty("firebaseAppId")
+        def appId = secrets.getProperty(firebaseAppIdKey)
         assert(appId != null)
         builder.content.client[0].client_info.mobilesdk_app_id = appId
 
-        def oAuthClientId = secrets.getProperty("firebaseOAuthClientId")
+        def oAuthClientId = secrets.getProperty(firebaseOAuthClientIdKey)
         assert(oAuthClientId != null)
         builder.content.client[0].oauth_client[0].client_id = oAuthClientId
 
-        def currentKey = secrets.getProperty("firebaseCurrentKey")
+        def currentKey = secrets.getProperty(firebaseCurrentKeyKey)
         assert(currentKey != null)
         builder.content.client[0].api_key[0].current_key = currentKey
 
@@ -154,6 +162,7 @@ task replaceGoogleServices {
 }
 
 def resetGoogleServicesFile() {
+    println "Resetting services JSON"
     def servicesJSONFile = rootProject.file('android/google-services.json')
     "git checkout HEAD -- ${servicesJSONFile.path}".execute()
 }
