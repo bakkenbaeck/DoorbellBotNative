@@ -92,7 +92,7 @@ task replaceGoogleServices {
 
     ext.loadSecretsFromEnv = {
 
-        def url = getEnvirnomentValue(firebaseUrlKey)
+        def url = getEnvironmentValue(firebaseUrlKey)
 
         if (url == null) {
             return null
