@@ -1,7 +1,9 @@
+import groovy.json.JsonBuilder
+import groovy.json.JsonSlurper
+
 apply plugin: 'com.android.application'
-
+apply plugin: 'io.fabric'
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
 
 android {
@@ -23,10 +25,20 @@ android {
 }
 
 dependencies {
-    implementation project(':SharedCode')
 
+    // LOCAL DEPENDENCIES
+
+    implementation project(':SharedCode')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    // KOTLIN DEPENDENCIES
+
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+    // GOOGLE DEPENDENCIES
+
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'android.arch.navigation:navigation-fragment:1.0.0-alpha07'
     implementation 'android.arch.navigation:navigation-ui:1.0.0-alpha07'
@@ -34,7 +46,125 @@ dependencies {
     implementation 'android.arch.navigation:navigation-ui-ktx:1.0.0-alpha07'
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.google.firebase:firebase-core:16.0.5'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.6'
+
+
+    // TESTING DEPENDENCIES
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+// SECRET LOADING!
+
+task replaceGoogleServices {
+    ext.loadSecrets = {
+        def secrets = loadSecretsFromProperties()
+        if (secrets == null) {
+            secrets = loadSecretsFromEnv()
+        }
+
+        assert(secrets != null)
+
+        return secrets
+    }
+
+    ext.loadSecretsFromProperties = {
+        def secretsPropertiesFile = rootProject.file(".secrets/android_secrets.properties")
+        def secretsProperties = new Properties()
+
+        try {
+            secretsProperties.load(new FileInputStream(secretsPropertiesFile))
+            println "Loaded secrets from local file..."
+        } catch (FileNotFoundException e) {
+            // File was not found, try to load from env.
+            return null
+        }
+
+        return secretsProperties
+    }
+
+    ext.getEnvironmentValue = { key ->
+        return System.getenv().get(key, null)
+    }
+
+    ext.loadSecretsFromEnv = {
+        def url = getEnvironmentValue(firebaseUrlKey)
+
+        if (url == null) {
+            return null
+        }
+
+        println("Loading secrets from env...")
+
+        def secretsProperties = new Properties()
+        secretsProperties.put(firebaseProjectNumberKey, getEnvironmentValue(firebaseProjectNumberKey))
+        secretsProperties.put(firebaseUrlKey, getEnvironmentValue(firebaseUrlKey))
+        secretsProperties.put(firebaseProjectIdKey, getEnvironmentValue(firebaseProjectIdKey))
+        secretsProperties.put(firebaseStorageBucketKey, getEnvironmentValue(firebaseStorageBucketKey))
+        secretsProperties.put(firebaseAppIdKey, getEnvironmentValue(firebaseAppIdKey))
+        secretsProperties.put(firebaseOAuthClientIdKey, getEnvironmentValue(firebaseOAuthClientIdKey))
+        secretsProperties.put(firebaseCurrentKeyKey, getEnvironmentValue(firebaseCurrentKeyKey))
+
+        return secretsProperties
+    }
+
+    doLast {
+        def secrets = loadSecrets()
+
+        assert (secrets != null)
+
+        def servicesJSONFile = rootProject.file('android/google-services.json')
+        def parsedJSON = new JsonSlurper().parseText(servicesJSONFile.text)
+        def builder = new JsonBuilder(parsedJSON)
+
+        def projectNumber = secrets.getProperty(firebaseProjectNumberKey)
+        assert(projectNumber != null)
+        builder.content.project_info.project_number = projectNumber
+
+        def url = secrets.getProperty(firebaseUrlKey)
+        assert(url != null)
+        builder.content.project_info.firebase_url = url
+
+        def projectId = secrets.getProperty(firebaseProjectIdKey)
+        assert(projectId != null)
+        builder.content.project_info.project_id = projectId
+
+        def storageBucket = secrets.getProperty(firebaseStorageBucketKey)
+        assert(storageBucket != null)
+        builder.content.project_info.storage_bucket = storageBucket
+
+        def appId = secrets.getProperty(firebaseAppIdKey)
+        assert(appId != null)
+        builder.content.client[0].client_info.mobilesdk_app_id = appId
+
+        def oAuthClientId = secrets.getProperty(firebaseOAuthClientIdKey)
+        assert(oAuthClientId != null)
+        builder.content.client[0].oauth_client[0].client_id = oAuthClientId
+
+        def currentKey = secrets.getProperty(firebaseCurrentKeyKey)
+        assert(currentKey != null)
+        builder.content.client[0].api_key[0].current_key = currentKey
+
+        servicesJSONFile.write(builder.toPrettyString())
+    }
+}
+
+def resetGoogleServicesFile() {
+    println "Resetting services JSON"
+    def servicesJSONFile = rootProject.file('android/google-services.json')
+    "git checkout HEAD -- ${servicesJSONFile.path}".execute()
+}
+
+
+// OPEN SOURCE: Comment out until the next newline if you're using your own `google-services.json`
+preBuild.dependsOn replaceGoogleServices
+gradle.taskGraph.afterTask { Task task ->
+    if (task == gradle.taskGraph.allTasks.last()) {
+        resetGoogleServicesFile()
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'
